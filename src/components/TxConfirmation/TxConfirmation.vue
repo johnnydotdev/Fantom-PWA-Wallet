@@ -67,10 +67,10 @@
                     Metamask is not installed.
                 </div>
                 <div v-else-if="!$metamask.isCorrectChainId()">
-                    Please, select Opera chain in Metamask.
+                    Please select the Fantom Opera chain in Metamask.
                 </div>
                 <div v-else-if="metamaskAccount.toLowerCase() !== currentAccount.address.toLowerCase()">
-                    Please, select account <b>{{ currentAccount.address }}</b> in Metamask.
+                    Please select account <b>{{ currentAccount.address }}</b> in Metamask.
                 </div>
             </div>
         </f-window>
